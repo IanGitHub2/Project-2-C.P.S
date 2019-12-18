@@ -1,5 +1,10 @@
 # Project-2-C.P.S
 
+# Links
+- Github: [Github link](https://git.generalassemb.ly/IanGtHbE1/Project-2-C.P.S.git)
+- Trello Board: [Trello Board](https://trello.com/invite/b/U3oCwYcn/b95b676766a1c2e1ea65994bd6fee9f4/project-2)
+- Website: [Website]()
+
 # Company
 
 The company's page allows you to create a company or click on a company already in the database and edit or delete it.

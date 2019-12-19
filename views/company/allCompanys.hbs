@@ -1,14 +1,22 @@
-<h1>Company's</h1>
-<h3>A list of every company in the database</h3>
+<div id="background">
+<h1 class="allHeader"   id="allHeader1">Company's</h1>
+
+<h3 class="allHeader" id="allHeader3">A list of every company in the database</h3>
 
 
 <a href="/company/new">
     <button>List New Company</button>
 </a>
 
+<nav>
+
+
+</nav>
+
+<div id="listOfCompanys">
 {{#each allCompanys}}
 
-  <a href="/company/{{_id}}">
+  <a href="/company/{{_id}}" id="eachCompany">
     <div>
         <span>{{name}}</span>
         
@@ -16,3 +24,5 @@
 </a>
 
 {{/each}}
+</div>
+</div>

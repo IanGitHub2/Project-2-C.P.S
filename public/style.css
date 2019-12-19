@@ -4,6 +4,12 @@ body {
     background-size: 220vh;
     
 }
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
 ul {
     list-style-type: none;
 }

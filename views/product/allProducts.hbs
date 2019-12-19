@@ -1,0 +1,16 @@
+<h1>Product's</h1>
+
+<a href="/product/new"> 
+    <button>List New Product</button>
+</a>
+
+{{#each allProducts}}
+
+  <a href="/product/{{_id}}" id="eachProduct">
+    <div>
+        <span>{{name}}</span>
+        
+    </div>
+</a>
+
+{{/each}}

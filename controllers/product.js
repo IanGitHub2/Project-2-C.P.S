@@ -9,7 +9,7 @@ const productRouter = express.Router()
 productRouter.get('/', (req, res) => {
   productApi.getAllProducts()
   .then((allProducts) => {
-    res.render('product/getAllProducts', {allProducts})
+    res.render('product/allProducts', {allProducts})
   })
   .catch((error) => {
     res.render(error)

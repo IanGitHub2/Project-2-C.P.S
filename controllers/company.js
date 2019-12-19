@@ -45,7 +45,7 @@ companyRouter.post('/', (req, res) => {
     })
 })
 
-companyRouter.get('edit/:companyId', (req, res) => {
+companyRouter.get('/editCompany/:companyId', (req, res) => {
   const companyId = req.params.companyId
   companyApi.getSingleCompany(companyId)
     .then((company) => {
@@ -59,7 +59,8 @@ companyRouter.get('edit/:companyId', (req, res) => {
 
 companyRouter.put('/:companyId', (req, res) => {
   const companyId = req.params.companyId
-  companyApi.editCompany(companyId)
+  const updatedCompany = req.body
+  companyApi.editCompany(companyId, updatedCompany)
     .then(() => {
       res.redirect(`/company/${companyId}`)
     })
@@ -71,7 +72,8 @@ companyRouter.put('/:companyId', (req, res) => {
 
 companyRouter.delete('/:companyId', (req, res) => {
   const companyId = req.params.companyId
-  companyApi.deleteCompany(companyId)
+  const deleteCompany = req.body
+  companyApi.deleteCompany(companyId, deleteCompany)
     .then(() => {
       res.redirect('/company')
     })
@@ -82,6 +84,5 @@ companyRouter.delete('/:companyId', (req, res) => {
 })
 
 module.exports = {
-  companyRouter,
-  companyApi
+  companyRouter
 }

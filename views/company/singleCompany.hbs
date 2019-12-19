@@ -1,6 +1,6 @@
 <h1>{{ company.name}}</h1>
 
-<h3>Description: {{company.description}}</h3>
+<h3>Discription: {{company.discription}}</h3>
 <h3>Products: {{company.products}}</h3>
 <h3>Est: {{company.est}}</h3>
 
@@ -8,10 +8,10 @@
     <button>Home</button>
 </a>
 
-<a href="/company/edit/{{company._id}}">
+<a href="/company/editCompany/{{company._id}}">
     <button>Edit Company</button>
 </a>
 
-<a href="/company/delete/{{company._id}}">
-    <button>Delete Company</button>
-</a>
+<form method="POST" action="/company/{{company._id}}?_method=DELETE">
+    <input type="submit" value="Delete">
+</form>

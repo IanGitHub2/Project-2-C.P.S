@@ -1,7 +1,7 @@
 const mongoose = require('./connection.js')
 const companySchema = new mongoose.Schema({
    name: String,
-   description: String,
+   discription: String,
    products: String,
    est: Number 
 })
@@ -13,7 +13,7 @@ const getAllCompanys = () => {
 }
 
 const getSingleCompany = (companyId) => {
-   return companyCollection.findOne({_companyId: companyId})
+   return companyCollection.findById(companyId)
 }
 
 const addNewCompany = (newCompany) => {
@@ -21,11 +21,11 @@ const addNewCompany = (newCompany) => {
 }
 
 const editCompany = (companyId, editCompany) => {
-   return companyCollection.updateOne({_companyId: companyId}, editCompany)
+   return companyCollection.updateOne({_id: companyId}, editCompany)
 }
 
-const deleteCompany = (companyId) => {
-   return companyCollection.deleteOne({_companyId: companyId})
+const deleteCompany = (companyId, deleteCompany) => {
+   return companyCollection.deleteOne({_id: companyId}, deleteCompany)
 }
 
 module.exports = {

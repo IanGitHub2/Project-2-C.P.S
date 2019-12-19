@@ -8,8 +8,8 @@ const companyRouter = express.Router()
 
 companyRouter.get('/', (req, res) => {
   companyApi.getAllCompanys()
-  .then((company) => {
-    res.render('company/allcompanys', {company})
+  .then((allCompanys) => {
+    res.render('company/allcompanys', {allCompanys})
   })
   .catch((error) => {
     res.send(error)
@@ -46,10 +46,10 @@ companyRouter.post('/', (req, res) => {
 })
 
 companyRouter.get('edit/:companyId', (req, res) => {
-  const companyId = req.params.body
+  const companyId = req.params.companyId
   companyApi.getSingleCompany(companyId)
     .then((company) => {
-      res.render('allCompany/editCompany', {company})
+      res.render('company/editCompany', {company})
     })
     .catch((error) => {
       res.send(error)

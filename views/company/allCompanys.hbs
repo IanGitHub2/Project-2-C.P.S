@@ -1,0 +1,18 @@
+<h1>Company's</h1>
+<h3>A list of every company in the database</h3>
+
+
+<a href="/company/new">
+    <button>List New Company</button>
+</a>
+
+{{#each allCompanys}}
+
+  <a href="/company/{{_id}}">
+    <div>
+        <span>{{name}}</span>
+        
+    </div>
+</a>
+
+{{/each}}

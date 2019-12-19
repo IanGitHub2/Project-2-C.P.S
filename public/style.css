@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+
+
+
+    

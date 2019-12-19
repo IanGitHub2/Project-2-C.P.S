@@ -1,0 +1,17 @@
+<h1>{{ company.name}}</h1>
+
+<h3>Description: {{company.description}}</h3>
+<h3>Products: {{company.products}}</h3>
+<h3>Est: {{company.est}}</h3>
+
+<a href="/company/">
+    <button>Home</button>
+</a>
+
+<a href="/company/edit/{{company._id}}">
+    <button>Edit Company</button>
+</a>
+
+<a href="/company/delete/{{company._id}}">
+    <button>Delete Company</button>
+</a>

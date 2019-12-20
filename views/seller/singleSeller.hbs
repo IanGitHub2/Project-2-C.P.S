@@ -1,0 +1,16 @@
+<h1>{{ seller.name}}</h1>
+
+<h3>Discription: {{seller.discription}}</h3>
+<h3>Prosuct's Sold: {{seller.productsSold}}</h3>
+
+<a href="/seller/">
+    <button>Home</button>
+</a>
+
+<a href="/seller/editSeller/{{seller._id}}">
+    <button>Edit Seller</button>
+</a>
+
+<form method="POST" action="/seller/{{seller._id}}?_method=DELETE">
+    <input type="submit" value="Delete">
+</form>

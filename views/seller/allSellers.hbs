@@ -1,0 +1,20 @@
+<h1>Seller's</h1>
+
+<a href="/seller/new">
+    <button>List New Seller</button>
+</a>
+
+
+<div id="listOfSellers">
+{{#each allSellers}}
+
+  <a href="/seller/{{_id}}" id="eachSeller">
+    <div>
+        <span>{{name}}</span>
+        
+    </div>
+</a>
+
+{{/each}}
+</div>
+</div>

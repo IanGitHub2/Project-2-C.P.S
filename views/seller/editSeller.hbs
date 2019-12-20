@@ -1,0 +1,9 @@
+<h1>Re-List a Seller</h1>
+<form method="POST" action="/seller/{{seller._id}}?_method=PUT">
+
+ <input type="text" value="{{seller.name}}" placeholder="name" name="name"/>
+ <input type="text" value="{{seller.discription}}" placeholder="discription" name="discription"/>
+ <input type="text" value="{{seller.productsSold}}" placeholder="productsSold" name="productsSold"/>
+
+  <input type="submit" value="Save" />
+</form>

@@ -1,0 +1,10 @@
+<h1>Re-List a Product</h1>
+<form method="POST" action="/product/{{product._id}}?_method=PUT">
+
+ <input type="text" value="{{product.name}}" placeholder="name" name="name"/>
+ <input type="text" value="{{product.discription}}" placeholder="discription" name="discription"/>
+ <input type="text" value="{{product.soldBy}}" placeholder="soldBy" name="soldBy"/>
+ <input type="date" value="{{product.madeBetween}}" placeholder="madeBetween" name="madeBetween"/>
+
+  <input type="submit" value="Save" />
+</form>

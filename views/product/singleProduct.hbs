@@ -1,0 +1,17 @@
+<h1>{{ product.name}}</h1>
+
+<h3>Discription: {{product.discription}}</h3>
+<h3>Sold By: {{product.soldBy}}</h3>
+<h3>Made Between: {{product.madeBetween}}</h3>
+
+<a href="/product/">
+    <button>Home</button>
+</a>
+ 
+<a href="/product/editProduct/{{product._id}}">
+    <button>Edit Product</button>
+</a>
+
+<form method="POST" action="/product/{{product._id}}?_method=DELETE">
+    <input type="submit" value="Delete">
+</form>

@@ -21,7 +21,7 @@ productRouter.get('/new', (req, res) => {
   res.render('product/createProduct')
 })
 
-productRouter.get('/productId', (req, res) => {
+productRouter.get('/:productId', (req, res) => {
   const productId = req.params.productId
   productApi.getSingleProduct(productId)
     .then((product) => {
@@ -45,11 +45,11 @@ productRouter.post('/', (req, res) => {
     })
 })
 
-productRouter.get('/company/companyId', (req, res) => {
+productRouter.get('/editProduct/:productyId', (req, res) => {
   const productId = req.params.productId
   productApi.getSingleProduct(productId)
     .then((product) => {
-      res.render('product/editProduct')
+      res.render('product/editProduct', {product})
     })
     .catch((error) => {
       res.send(error)
@@ -57,7 +57,7 @@ productRouter.get('/company/companyId', (req, res) => {
     })
 })
 
-productRouter.put('/productId', (req, res) => {
+productRouter.put('/:productId', (req, res) => {
   const productId = req.params.productId
   const editProduct = req.body
   productApi.editProduct(productId, editProduct)
@@ -70,7 +70,7 @@ productRouter.put('/productId', (req, res) => {
     })
 })
 
-productRouter.delete('/productId', (req, res) => {
+productRouter.delete('/:productId', (req, res) => {
   const productId = req.params.productId
   const deleteProduct = req.body
   productApi.deleteProduct(productId, deleteProduct)

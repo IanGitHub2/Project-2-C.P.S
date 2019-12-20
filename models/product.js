@@ -3,7 +3,7 @@ const productSchema = new mongoose.Schema({
     name: String,
     discription: String,
     soldBy: String,
-    madeBetween: Number
+    madeBetween: Date
 })
 
 const productCollection = mongoose.model('product', productSchema)
@@ -13,9 +13,9 @@ const getAllProducts = () => {
 }
 
 const getSingleProduct = (productId) => {
-    return productCollection.findOne(productId)
+    return productCollection.findById(productId)
 }
-
+ 
 const addNewProduct = (newProduct) => {
     return productCollection.create(newProduct)
 }

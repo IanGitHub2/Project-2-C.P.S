@@ -9,7 +9,7 @@ const companyRouter = express.Router()
 companyRouter.get('/', (req, res) => {
   companyApi.getAllCompanys()
   .then((allCompanys) => {
-    res.render('company/allcompanys', {allCompanys})
+    res.render('company/allCompanys', {allCompanys})
   })
   .catch((error) => {
     res.send(error)

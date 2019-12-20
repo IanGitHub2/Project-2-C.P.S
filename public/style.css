@@ -1,27 +1,38 @@
-body {
-    
-    background-image: url(https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-size: 220vh;
-    
+html,body, ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.nav-bar-top {
+    height:  44px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    background: #fff;
+}
+
+.nav-bar-top li {
+    padding: 0 10px;
 }
 
 .container {
-    width: 100%;
     min-height: 100vh;
     height: auto;
+    background-image: url(https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: 220vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
 }
 ul {
     list-style-type: none;
 }
-
-li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    padding: 8px;
-  }
 
 .allHeader {
     text-align: center;

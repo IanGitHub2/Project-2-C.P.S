@@ -44,8 +44,8 @@ productRouter.post('/', (req, res) => {
       console.log(error)
     })
 })
-
-productRouter.get('/editProduct/:productyId', (req, res) => {
+ 
+productRouter.get('/editProduct/:productId', (req, res) => {
   const productId = req.params.productId
   productApi.getSingleProduct(productId)
     .then((product) => {

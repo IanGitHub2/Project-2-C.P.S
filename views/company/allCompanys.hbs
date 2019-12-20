@@ -1,24 +1,24 @@
-<div id="background">
-<h1 class="allHeader"   id="allHeader1">Company's</h1>
+<div class="container">
+  <h1 class="allHeader"   id="allHeader1">Company's</h1>
 
-<h3 class="allHeader" id="allHeader3">A list of every company in the database</h3>
-
-
-<a href="/company/new">
-    <button>List New Company</button>
-</a>
+  <h3 class="allHeader" id="allHeader3">A list of every company in the database</h3>
 
 
-<div id="listOfCompanys">
-{{#each allCompanys}}
+  <a href="/company/new">
+      <button>List New Company</button>
+  </a>
 
-  <a href="/company/{{_id}}" id="eachCompany">
-    <div>
-        <span>{{name}}</span>
+
+  <div id="listOfCompanys">
+  {{#each allCompanys}}
+
+    <a href="/company/{{_id}}" id="eachCompany">
+      <div>
+          <span>{{name}}</span>
         
-    </div>
-</a>
+      </div>
+    </a>
 
-{{/each}}
-</div>
-</div>
+    {{/each}}
+  </div>
+</div> 

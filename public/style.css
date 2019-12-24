@@ -63,12 +63,43 @@ form {
     justify-content: center;
     align-items: center;
 }
-#allHeader1 {
-    background-color: rgba(232, 214, 175, 0.4)
+#Header1 {
+    background-color: rgba(232, 214, 175, 0.4);
+    font-size: 3em;
 }
 
+/* Products CSS */
 
+#containerProducts {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/1708852/pexels-photo-1708852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: 180vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
 
+#Header1Product {
+    background-color: rgba(232, 214, 175, 0.4);
+    font-size: 3em;
+    text-align: center;
+}
 
+   /* seller's CSS  */
 
-    
+   #containerSellers {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/1227511/pexels-photo-1227511.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: 180vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
+
+    #Header1Seller {
+    background-color: rgba(232, 214, 175, 0.4);
+    font-size: 3em;
+    text-align: center;
+}

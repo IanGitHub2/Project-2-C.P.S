@@ -1,7 +1,7 @@
 <div class="container">
   <h1 class="allHeader"   id="allHeader1">Company's</h1>
 
-  <h3 class="allHeader" id="allHeader3">A list of every company in the database</h3>
+  {{!-- <h3 class="allHeader" id="allHeader3">A list of every company in the database</h3> --}}
 
 
   <a href="/company/new">
@@ -10,6 +10,7 @@
 
 
   <div id="listOfCompanys">
+    <h3 class="allHeader" id="allHeader3">A list of every company in the database</h3>
   {{#each allCompanys}}
 
     <a href="/company/{{_id}}" id="eachCompany">

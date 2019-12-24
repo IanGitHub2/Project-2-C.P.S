@@ -14,7 +14,7 @@ html,body, ul {
     padding: 0;
     position: fixed;
     top: 0;
-    background: #fff;
+    background: rgba(232, 214, 175, 0.68);
 }
 
 .nav-bar-top li {
@@ -24,7 +24,7 @@ html,body, ul {
 .container {
     min-height: 100vh;
     height: auto;
-    background-image: url(https://images.pexels.com/photos/355770/pexels-photo-355770.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-image: url(https://images.pexels.com/photos/936800/pexels-photo-936800.jpeg?cs=srgb&dl=white-and-gray-concrete-brick-wall-936800.jpg&fm=jpg);
     background-size: 220vh;
     margin: 44px 0 0 0;
     padding: 0 0;
@@ -64,13 +64,10 @@ form {
     align-items: center;
 }
 #allHeader1 {
-    color: black;
-    
+    background-color: rgba(232, 214, 175, 0.4)
 }
 
-#allHeader3 {
-    color: black;
-}
+
 
 
 

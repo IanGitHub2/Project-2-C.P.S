@@ -1,4 +1,5 @@
-<h1>Re-List a Company</h1>
+<div id="editCompanyStyle">
+<h1 id="editH1C">Re-List a Company</h1>
 <form method="POST" action="/company/{{company._id}}?_method=PUT">
 
  <input type="text" value="{{company.name}}" placeholder="name" name="name"/>
@@ -8,3 +9,4 @@
 
   <input type="submit" value="Save" />
 </form>
+</div>

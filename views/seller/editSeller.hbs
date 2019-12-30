@@ -1,4 +1,6 @@
-<h1>Re-List a Seller</h1>
+
+<div id="editSellerStyle">
+<h1 id="editH1S">Re-List a Seller</h1>
 <form method="POST" action="/seller/{{seller._id}}?_method=PUT">
 
  <input type="text" value="{{seller.name}}" placeholder="name" name="name"/>
@@ -7,3 +9,4 @@
 
   <input type="submit" value="Save" />
 </form>
+</div>

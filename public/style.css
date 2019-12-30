@@ -20,16 +20,6 @@ html,body, ul {
 .nav-bar-top li {
     padding: 0 10px;
 }
-
-.container {
-    min-height: 100vh;
-    height: auto;
-    background-image: url(https://images.pexels.com/photos/936800/pexels-photo-936800.jpeg?cs=srgb&dl=white-and-gray-concrete-brick-wall-936800.jpg&fm=jpg);
-    background-size: 220vh;
-    margin: 44px 0 0 0;
-    padding: 0 0;
-    position: relative;
-}
 ul {
     list-style-type: none;
 }
@@ -46,16 +36,8 @@ a {
     justify-self: center;
 }
 
-#listOfCompanys {
-  background-color: white;
-  margin: 0 350px;
-  box-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2, 0px 0px 5px rgba(206,89,55,0);
-  border-radius: 20px;
-}
-
 #eachCompany {
-    margin: 2em auto;
-    
+    margin: 2em auto;  
 }
 
 form {
@@ -63,8 +45,42 @@ form {
     justify-content: center;
     align-items: center;
 }
+
+/* company style and background */
+.container {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.pexels.com/photos/936800/pexels-photo-936800.jpeg?cs=srgb&dl=white-and-gray-concrete-brick-wall-936800.jpg&fm=jpg);
+    background-size: 220vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
 #Header1 {
     background-color: rgba(232, 214, 175, 0.4);
+    font-size: 3em;
+}
+#listOfCompanys {
+    background-color: white;
+    margin: 0 350px;
+    box-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #787777, -4px 8px 1px #7b7a7a, -5px 10px 1px #7f7d7d, -6px 12px 1px #828181, -7px 14px 1px #868585, -8px 16px 1px #8b8a89, -9px 18px 1px #8f8e8d, -10px 20px 1px #949392, -11px 22px 1px #999897, -12px 24px 1px #9e9c9c, -13px 26px 1px #a3a1a1, -14px 28px 1px #a8a6a6, -15px 30px 1px #adabab, -16px 32px 1px #b2b1b0, -17px 34px 1px #b7b6b5, -18px 36px 1px #bcbbba, -19px 38px 1px #c1bfbf, -20px 40px 1px #c6c4c4, -21px 42px 1px #cbc9c8, -22px 44px 1px #cfcdcd, -23px 46px 1px #d4d2d1, -24px 48px 1px #d8d6d5, -25px 50px 1px #dbdad9, -26px 52px 1px #dfdddc, -27px 54px 1px #e2e0df, -28px 56px 1px #e4e3e2, 0px 0px 5px rgba(206,89,55,0);
+    border-radius: 20px;
+}
+
+/* edit company page */
+
+#editCompanyStyle {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.unsplash.com/photo-1516880711640-ef7db81be3e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+    background-size: 180vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
+
+#editH1C {
+    text-align: center;
     font-size: 3em;
 }
 
@@ -86,6 +102,24 @@ form {
     text-align: center;
 }
 
+/* edit products page */
+
+#editProductStyle {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.unsplash.com/photo-1482731215275-a1f151646268?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80);
+    background-size: 180vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
+
+#editH1P {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
    /* seller's CSS  */
 
    #containerSellers {
@@ -102,4 +136,22 @@ form {
     background-color: rgba(232, 214, 175, 0.4);
     font-size: 3em;
     text-align: center;
+}
+
+/* edit sellers page */
+
+#editSellerStyle {
+    min-height: 100vh;
+    height: auto;
+    background-image: url(https://images.unsplash.com/photo-1533378890784-b2a5b0a59d40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1621&q=80);
+    background-size: 180vh;
+    margin: 44px 0 0 0;
+    padding: 0 0;
+    position: relative;
+}
+
+#editH1S {
+    text-align: center;
+    font-size: 3em;
+    color: white;
 }

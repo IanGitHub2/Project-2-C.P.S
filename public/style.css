@@ -75,6 +75,11 @@ form {
 }
 .singleH3C {
     text-align: center;
+    margin: 2% 25%;
+}
+strong {
+    color: slategrey;
+    font-size: 30px;
 }
 /* edit company page */
 #editCompanyStyle {
@@ -130,6 +135,7 @@ form {
 .singleH3P {
     text-align: center;
     font-family: 'Girassol', cursive;
+    margin: 2% 25%;
 }
  
 /* edit products page */
@@ -185,6 +191,7 @@ form {
 }
 .singleH3S {
     text-align: center;
+    margin: 2% 25%;
     font-family: 'Girassol', cursive;
 }
 

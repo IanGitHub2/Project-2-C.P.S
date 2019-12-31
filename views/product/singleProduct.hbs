@@ -1,8 +1,9 @@
-<h1>{{ product.name}}</h1>
+<div id="backgronudSingleForAll">
+<h1 class="singleH1P">{{ product.name}}</h1>
 
-<h3>Discription: {{product.discription}}</h3>
-<h3>Sold By: {{product.soldBy}}</h3>
-<h3>Made Between: {{product.madeBetween}}</h3>
+<h3 class="singleH3P">Discription: {{product.discription}}</h3>
+<h3 class="singleH3P">Sold By: {{product.soldBy}}</h3>
+<h3 class="singleH3P">Made Between: {{product.madeBetween}}</h3>
 
 <a href="/product/">
     <button>Home</button>
@@ -15,3 +16,4 @@
 <form method="POST" action="/product/{{product._id}}?_method=DELETE">
     <input type="submit" value="Delete">
 </form>
+</div>

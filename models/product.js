@@ -3,7 +3,7 @@ const productSchema = new mongoose.Schema({
     name: String,
     discription: String,
     soldBy: String,
-    madeBetween: Date
+    madeBetween: String
 })
 
 const productCollection = mongoose.model('product', productSchema)

@@ -1,8 +1,9 @@
-<h1>{{ company.name}}</h1>
+<div id="backgronudSingleForAll">
+<h1 class="singleH1C">{{ company.name}}</h1>
 
-<h3>Discription: {{company.discription}}</h3>
-<h3>Products: {{company.products}}</h3>
-<h3>Est: {{company.est}}</h3>
+<h3 class="singleH3C">Discription: {{company.discription}}</h3>
+<h3 class="singleH3C">Products: {{company.products}}</h3>
+<h3 class="singleH3C">Est: {{company.est}}</h3>
 
 <a href="/company/">
     <button>Home</button>
@@ -15,3 +16,4 @@
 <form method="POST" action="/company/{{company._id}}?_method=DELETE">
     <input type="submit" value="Delete">
 </form>
+</div>

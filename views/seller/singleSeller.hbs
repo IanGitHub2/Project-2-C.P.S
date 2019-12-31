@@ -1,7 +1,8 @@
-<h1>{{ seller.name}}</h1>
+<div id="backgronudSingleForAll">
+<h1 class="singleH1S">{{ seller.name}}</h1>
 
-<h3>Discription: {{seller.discription}}</h3>
-<h3>Prosuct's Sold: {{seller.productsSold}}</h3>
+<h3 class="singleH3S">Discription: {{seller.discription}}</h3>
+<h3 class="singleH3S">Prosuct's Sold: {{seller.productsSold}}</h3>
 
 <a href="/seller/">
     <button>Home</button>
@@ -14,3 +15,4 @@
 <form method="POST" action="/seller/{{seller._id}}?_method=DELETE">
     <input type="submit" value="Delete">
 </form>
+</div>

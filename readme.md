@@ -3,7 +3,7 @@
 # Links
 - Github: [Github link](https://git.generalassemb.ly/IanGtHbE1/Project-2-C.P.S.git)
 - Trello Board: [Trello Board](https://trello.com/invite/b/U3oCwYcn/b95b676766a1c2e1ea65994bd6fee9f4/project-2)
-- Website: [Website]()
+- Website: [Website](https://infinite-badlands-56464.herokuapp.com/company/)
 
 # Company
 

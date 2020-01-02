@@ -1,6 +1,7 @@
 const mongoose = require('./connection.js')
 const companySchema = new mongoose.Schema({
    name: String,
+   image: String,
    discription: String,
    products: String,
    est: Number 

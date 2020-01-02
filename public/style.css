@@ -251,3 +251,13 @@ strong {
     position: relative;
     text-align: center;
 }
+
+/* styling for image added to any of C.P.S */
+
+.imageCPS {
+    display: block;
+    margin: auto;
+    width: 15%;
+    border-radius: 50px;
+    
+}

@@ -1,6 +1,7 @@
 const mongoose = require('./connection.js')
 const productSchema = new mongoose.Schema({
     name: String,
+    image: String,
     discription: String,
     soldBy: String,
     madeBetween: String

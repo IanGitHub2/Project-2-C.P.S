@@ -2,6 +2,7 @@
 <h1 id="editH1C">Re-List a Company</h1>
 <form method="POST" action="/company/{{company._id}}?_method=PUT">
 
+ <input type="text" value="{{company.image}}" placeholder="image" name="image"/>
  <input type="text" value="{{company.name}}" placeholder="name" name="name"/>
  <input type="text" value="{{company.discription}}" placeholder="discription" name="discription"/>
  <input type="text" value="{{company.products}}" placeholder="products" name="products"/>
